@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡ Buscador de palabras !</title>
+    <link rel="stylesheet" href="stylos.css">
+
+</head>
+
+<body>
+    <div id="texto">¡ Buscador de palabras !</div>
+    <div class="posicionar-palabras-encontradas">
+        <div id="palabras-encontradas">Sin resultados</div>
+        <div class="indice-palabras-encontradas">
+            <input class="bt-indice-palabras-encontradas" type="button" value="Reiniciar"onclick="reiniciar_palabras_encontradas()">
+        </div>
+    </div>
+
+    <div class="posicionar-palabras-añadir">
+        <textarea id="palabras-añadir" placeholder="Escribe palabras para buscar (dia,noche...) ..."></textarea>
+        <div id="palabras-buscar"></div>
+        <div class="indice">
+            <input type="button" class="bt-indice" value="Cambiar Palabras" onclick='cambiar_palabras()'>
+            <input type="button" class="bt-indice" value="Añadir Palabras" onclick='añadir_palabras()'>
+            <input type="button" class="bt-indice" id="bt-ver-palabras" value="Ver Palabras" onclick='ver_palabras()'>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
